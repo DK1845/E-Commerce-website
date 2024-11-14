@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Jersey Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff76;
+        }
+        header {
+            background-color: #6779f0;
+            color: #fff;
+            padding: 10px 20px;
+            height: 500px;
+            display: flex;
+            margin: 20px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            width: 150px;
+            height: auto;
+        }
+        nav {
+            background-color: #333;
+        }
+        nav .navbar {
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        .team-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .team-list li {
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .team-list h3 {
+            margin-bottom: 10px;
+        }
+        .team-list img {
+            width: 100px; 
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .team-list button {
+            display: block;
+            width: 150px;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+        .team-list button:hover {
+            background-color: #0057b3;
+        }
+        
+        .nav-item{
+            display: flex;
+            justify-content: space-around;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+        footer h4 {
+            margin: 20px 0 10px;
+        }
+        footer p {
+            margin: 5px 0;
+        }
+        .navbar {
+            background-color: #280123; 
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .container-fluid {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
+        .form-control {
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+            padding: 0.375rem 0.75rem;
+        }
+
+        .form-control:focus {
+            border-color: #80bdff;
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+        }
+
+        /* Search button styling */
+        .btn-outline-success {
+            color: #28a745;
+            border-color: #28a745;
+        }
+
+        .btn-outline-success:hover {
+            color: #fff;
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+
+    
+        @media (max-width: 992px) {
+            .navbar .container-fluid {
+                flex-direction: column;
+            }
+
+            .form-control,
+            .btn-outline-success {
+                width: 100%;
+                margin-bottom: 0.5rem;
+            }
+
+            .form-control {
+                margin-right: 0;
+            }
+        }
+        .team-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 200px;
+            background-color: rgb(234, 242, 244);
+            padding: 80px;
+            border-radius: 21px;
+            border-style: inset ;
+        }
+        .team-item img{
+            height: 270px;
+            width:250px;
+
+        }
+        header img{
+            height: 350px;
+            width: 400px;
+            border-radius: 800px;
+            border-style: solid;
+            margin-left: 250px;
+        }
+       header h1{
+        margin-right: 250px;
+        color: #280123;
+        font-size: 60px;
+        font-family: serif;
+
+       }
+       header h2{
+        color: black;
+        font-weight: 900;
+       }
+    </style>
+</head>
+<body>
+    
+    <header>
+        
+        <img src="https://i.ibb.co/gjqdSmd/1000-F-315929700-u0-DTz61d-Mo-U7h-Mr-Gix-Bzy1h1-By-SHi-I8-T.webpx" alt="IPL Logo" height="800px" width="400px">
+        <div>
+            <h1>IPL Jersey Shop</h1>
+            <br>
+            <h2>Shop Smart, Save Big!</h2>
+            <h2>Your One-Stop Shop for Everything You Need! </h2>    
+        </div>
+       
+    </header>
+    <nav>
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about" onclick="scrollToAbout()">About</a>
+            <a href="#contact" onclick="scrollToContact()">Contact</a>
+        </div>
+    </nav>
+    <div class="container">
+        <ul class="team-list">
+            <li class="team-item">
+                <img src="https://i.ibb.co/0tZvWj4/108697550.jpg" id="jersey" height="800px" width="450px" alt="RCB Jersey">
+                <button onclick="window.location.href='3rcb.html'">RCB</button>
+            </li>
+            <li class="team-item">
+                <img src="https://i.ibb.co/mXcVQ42/78798.webp" height="800px" width="450px" alt="MI Jersey">
+                <button onclick="window.location.href='4mi.html'">MI</button>
+            </li>
+            <li class="team-item">
+                <img src="https://i.ibb.co/g6DxZr6/5678.png" alt="CSK Jersey">
+                <button onclick="window.location.href='5csk.html'">CSK</button>
+            </li>
+            <li class="team-item">
+                <img src="https://i.ibb.co/rxxVrQ0/657.png" alt="RR Jersey">
+                <button onclick="window.location.href='7rr.html'">RR</button>
+            </li>
+            <li class="team-item">
+                <img src="https://i.ibb.co/8Mbmkk7/54.png" alt="DC Jersey">
+                <button onclick="window.location.href='6dc.html'">DC</button>
+            </li>
+        </ul>
+    </div>
+    <footer>
+        <h4 id="About">About</h4>
+        <p>Welcome to IPL Jersey Shopping, your go-to destination for authentic, high-quality Indian Premier League jerseys and merchandise. Our mission is to connect fans with their favorite teams by offering officially licensed products that embody the excitement and spirit of the IPL. We provide a wide selection of jerseys for all teams and players, ensuring there's something for every fan. Committed to customer satisfaction, we offer a seamless shopping experience with fast, reliable shipping and excellent customer service. Join our community of cricket enthusiasts, stay updated with the latest products and offers, and wear your team colors with pride!</p>
+        <h4 id="Contact">Contact</h4>
+        <p>Creators: Deepanshu Kandpal, Vaibhav Chawla, Yash Rai</p>
+        <p>Email: kandpaldeepanshu619@gmail.com, vaibhavchawla26315252@gmail.com, yashkumar8156@gmail.com</p>
+        <p>Contact number: 6395905125</p>
+        <p>Address: Graphic Era Hill University Bhimtal Campus, 263132, Uttarakhand, India</p>
+        <p>&copy; 2024 IPL Jersey Shop. All rights reserved.</p>
+    </footer>
+    <script>
+        function scrollToAbout() {
+            var aboutSection = document.getElementById("About");
+            aboutSection.scrollIntoView({ behavior: "smooth" });
+        }
+        function scrollToContact() {
+            var contactSection = document.getElementById("Contact");
+            contactSection.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+</body>
+</html>

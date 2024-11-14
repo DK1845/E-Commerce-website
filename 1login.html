@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Login Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.03);
+        }
+
+        h2 {
+            text-align: center;
+            color: #34495e;
+            margin-bottom: 20px;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #34495e;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #bdc3c7;
+            border-radius: 6px;
+            font-size: 14px;
+            transition: border 0.3s;
+        }
+
+        .form-group input:focus {
+            border-color: #2980b9;
+            outline: none;
+            box-shadow: 0 0 5px rgba(41, 128, 185, 0.3);
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 12px 20px;
+            background-color: #2980b9;
+            border: none;
+            color: white;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        .form-group button:hover {
+            background-color: #1c5980;
+        }
+
+        .toggle-link {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .toggle-link a {
+            color: #2980b9;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .toggle-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 id="form-title">Sign Up</h2>
+    <form id="auth-form" action="2home.html" method="POST">
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group" id="email-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+            <button type="submit">Sign Up</button>
+        </div>
+        <div class="toggle-link">
+            <p>Already have an account? <a href="#" id="toggle-link">Log in</a></p>
+        </div>
+    </form>
+</div>
+
+<script>
+    const formTitle = document.getElementById('form-title');
+    const authForm = document.getElementById('auth-form');
+    const toggleLink = document.getElementById('toggle-link');
+    const emailGroup = document.getElementById('email-group');
+    let isLogin = false;
+
+    toggleLink.addEventListener('click', function (e) {
+        e.preventDefault();
+        isLogin = !isLogin;
+
+        if (isLogin) {
+            formTitle.textContent = 'Log In';
+            emailGroup.style.display = 'none';
+            toggleLink.textContent = 'Sign up';
+            authForm.querySelector('button').textContent = 'Log In';
+        } else {
+            formTitle.textContent = 'Sign Up';
+            emailGroup.style.display = 'block';
+            toggleLink.textContent = 'Log in';
+            authForm.querySelector('button').textContent = 'Sign Up';
+        }
+    });
+</script>
+
+</body>
+</html>

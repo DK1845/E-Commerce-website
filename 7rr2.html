@@ -1,0 +1,1028 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index_page.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <title>RR</title>
+    <style>
+        
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+  }
+  
+  .navbar {
+    height: 40px;
+    background-color: #000d09;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+    justify-content: space-between;
+  }
+  .hello{
+    text-align: center;
+  }
+  .logoboder {
+   border-radius: 10000px;
+   border-color: #e2e7e6;
+   border-style: solid;
+   border-width: 1px;
+   padding: 8px;
+    height: 30px;
+    width: max-content;
+    background-size: cover;
+    background-color: rgb(2, 5, 18);
+    color: #ffffff;
+    
+    }
+    
+  
+  
+
+  .border {
+    border: 2px solid transparent;
+    border-radius: 2px;
+  }
+  .border:hover {
+    border: 1.5px solid white;
+  }
+  
+  .addfirst {
+    color: #cccccc;
+    font-size: 12px;
+    margin-left: 16px;
+    align-items: center;
+  }
+  
+  .addsecond {
+    font-size: 14px;
+    margin-left: 3px;
+    font-weight: 700;
+    align-items: center;
+  }
+  
+  .addicon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .border2:hover {
+    border: 1.5px solid white;
+    height: 50px;
+  }
+  
+  .search1 {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    background-color: rgb(255, 52, 52);
+    height: 40px;
+    width: 620px;
+    border-radius: 6px;
+    text-align: center;
+  }
+  
+  .nav-search {
+    display: flex;
+    height: 40px;
+    width: 620px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    text-align: center;
+    background-color: #ff8484;
+    margin-left: 15px;
+    border-radius: 4px;
+    justify-content: space-evenly;
+  }
+  
+  .search-option1 {
+    background-color: #f3f3f3;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    width: 50px;
+    text-align: center;
+    border: none;
+  }
+  
+  input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+  }
+  .search-input{
+      border: none;
+  }
+  .search-icon {
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(238, 156, 4, 0.849);
+    font-size: 1.2rem;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    color: #0f1111;
+  }
+  
+  .lanoption {
+    font-weight: bolder;
+    background: transparent;
+    color: white;
+    border: none;
+  }
+  
+  .languageoption {
+    height: 50px;
+    width: 74px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+  }
+  .american {
+    background-image: url(Images/america.webp);
+    background-size: cover;
+    height: 15px;
+    width: 20px;
+  }
+  .hello{
+    display: flex;
+    justify-content: space-around;
+    
+
+  }
+  #hello {
+    font-size: 12px;
+    margin-left: 4px;
+    color: #6e0000;
+    font-weight: 700;
+    margin-top: 12px;
+    
+  }
+  .offer_10{
+    display: flex;
+  }
+  #offer_10{
+    background-color: #e40707;
+    padding: 5px;
+    color: white;
+  }
+  #limited_time{
+    background-color: #0009ae;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    height: 29px;
+  }
+  
+  .account-sign {
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    color: white;
+    border: none;
+  }
+  
+  .return {
+    font-size: 12px;
+  }
+  
+  .order {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .cart i {
+    font-size: 30px;
+  }
+  
+  .cart {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  
+  .nav-search:hover {
+    border: 2px solid orange;
+  }
+  
+  .second-nav {
+    height: 48px;
+    
+    background-color: #000d09;
+    align-items: center;
+    color: white;
+    justify-content: space-evenly;
+    display: flex;
+    font-size: 20px;
+  }
+  
+  .second-nav p {
+    display: inline;
+    
+  }
+  
+  .allicon {
+    padding-left: 8px;
+    align-items: center;
+    display: flex;
+    width: 98px;
+    height: 36px;
+  }
+  
+  .list {
+    font-weight: 700;
+    margin: 8px;
+    font-size: 14px;
+    align-items: center;
+  }
+  
+  .panel-ops {
+    width: 70%;
+    font-size: 0.8rem;
+    margin-left: 100px;
+    font-size: larger;
+  }
+
+  .fa-solid fa-bars{
+    margin-left: -40px;
+  }
+  
+  .ptag {
+    margin-left: 15px;
+  }
+  .deals {
+    font-size: 0.9rem;
+    font-weight: 700;
+    background-color: yellow;
+    text-align: center;
+    margin-left: 150px;
+  }
+  
+  
+  .main{
+     background-image: url(https://i.ibb.co/1sFtZR0/dark-green-smoke-fog-wallpaper-preview.jpg);
+     background-repeat: no-repeat;
+
+
+     padding: 80px;
+      margin-top: 5px;
+      margin-left: 1px;
+      margin-right: 5px;
+      padding-top: 30px;
+      padding-right: 60px;
+      background-size: cover;
+      display: flex;
+      justify-content: left;
+      font-size: 45px;
+  }
+  .portfolio{
+    color: #f3f3f3;
+    border-radius: 15px;
+    padding: 10PX;
+  }
+  .portfolio01 h1{
+   color: solid rgb(255, 68, 0);
+  }
+
+  .portfolio02{
+    display:inline-block;
+    justify-content: space-around;
+  }
+  .portfolio02 img{
+    border-radius: 150px;
+    border-style: solid;
+  }
+  #a{
+    margin-left: 100px;
+    margin-bottom: 100px;
+    justify-content: flex-end;
+    background-color: white;
+    border-color: yellow;
+  }
+  #b{
+    margin-top: 100px;
+    background-color: white;
+    border-color: yellow;
+  }
+  #c{
+    margin-top: -80px;
+    margin-left: 70px;
+    background-color: white;
+    border-color: yellow;
+  }
+  
+  .msg{
+      font-size: 14px;
+      background-color: transparent;
+      width: 80%;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 25px;
+      margin-top: 120px;
+  }
+  
+  .msg a {
+      color: #000000;
+      text-decoration: bold;
+      font-size: 20px;
+  } 
+  
+  .shop{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      background-color: #e2e7e6;
+  }
+  
+  .box{
+      height: 300px;
+      width: 400px;
+      background-color: white;
+      padding: 20px 0px 15px;
+      margin: 8px;
+  }
+  
+  .shop1{
+      font-size: 16px;
+  }
+  
+  .box1-img{
+      height: 4px;
+      background-size: cover;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+  }
+  
+  .box1-content{
+      margin-left: 1rem;
+      margin-right: 1rem;
+  }
+  
+  
+  .shop1 {
+        text-decoration: none;
+        color: #000000;
+        font-size: 15px;
+  }
+  
+  
+  
+  .deals{
+    border-radius: 12px;
+    margin-top: 18px;
+    margin-left: 25px;
+    padding-left: 20px;
+    background-color: aquamarine;
+    height: 22pxpx;
+    width: 245px;
+  }
+  footer{
+    margin-top: 15px;
+  }
+  .firstpanel{
+    height: 50px;
+    background-color: #191818;
+    color: white;
+    font: 13px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .secondpanel{
+    background-color: #333;
+    color: white;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  ul{
+    margin-top: 20px;
+  }
+  ul a {
+    display: block;
+    font-size: 14px;
+    margin-top: 15px;
+    color: #dddddd;
+  }
+  
+  .thirdpanel{
+    background-color: #333;
+    color: rgb(9, 9, 9);
+    border-top: 0.5px solid #848688;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo{
+    background-image: url(https://www.amazon.com/ref=nav_logo);
+    height: 50px;
+    width: 100%;
+    background-size :cover;
+    width: 100px;
+  }
+  
+  .select-op{
+    margin-left: 55px;
+    display: flex;
+  }
+  
+  .select-op select{
+    background: white;
+    color: #060606;
+    font-size: 13px;
+    text-decoration: none;
+    margin-left: 5px;
+    border: 1px solid #848688;
+    padding: 6px 18px 6px 8px;
+    border-radius: 3px;
+  }
+  
+  .panel4{
+    background-color: #333;
+    color: white;
+    height: 80px;
+    font-size: 12px;
+    text-align: center;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+  }
+  
+  .page{
+    text-align: center;
+    padding-top: 25px;
+  }
+  .page a {
+    text-decoration: none;
+    color: white;
+  
+  }
+  
+  .copyright{
+    margin-top: 5px;
+  }
+
+  .allbase{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px;
+    transition: 15s;
+    
+  }
+  .items{
+    box-shadow: #000000;
+    border-radius: 20px;
+    border-style: outset;
+    background-color: #ffffff;
+    text-align: center;
+    padding: 25px;
+  }
+  .items:hover{
+    transform: scale(1.1);
+    z-index: 9px;
+  }
+  #Help{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #c84e02;
+    border-radius: 15px;
+   margin-left: 50px;
+   color: #f3f3f3;
+
+  }
+  a{
+    text-decoration: none;
+    color: #ffbf00;
+  }
+  a:hover{
+    background-color: black;
+    color: #f3f3f3;
+    border-color: #f3f3f3;
+  }
+  #login_msg{
+    color: #c84e02;
+  }
+  #sursun{
+    color: #c84e02;
+    font-size: 95px;
+    font-weight: 900;
+    font-family:unset;
+    font-stretch:ultra-expanded;
+  }
+  #hi{
+    font-size: 55px;
+    font-weight: 900;
+    font-family:unset;
+
+  }
+
+  .allsection{
+    display:flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  .sectionA{
+    display: block;
+    justify-content: center;
+  }
+
+  .sectionB{
+    margin-left: -550px;
+    padding: 10px;
+    
+    border-radius: 25px;
+    border-style:solid;
+    margin-right: 50px;
+    border-width: 1px;
+    border-color: #1b89ff;
+
+  }
+  .sectionB img{
+    border-radius: 12px;
+
+  }
+  .sectionC{
+    display: flex;
+    justify-content: space-around;
+
+   font-size: 25px;
+
+   padding-left: 80px;
+ 
+   margin-top: 40px;
+  }
+  .subsection{
+    padding: 5px;
+    border-radius: 10px;
+    border-style: solid;
+    margin-top: 5px;
+    border-width: 2px;
+  }
+  .subsectionc02{
+    padding: 5px;
+    margin: 30px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    height: 400px;
+    font-size: 20px;
+    border-color: #18aeff;
+  }
+  .subsectionc01{
+    margin-right: 40px;
+  }
+  #C01{
+    font-size: 30px;
+    margin: 10px;
+    
+  }
+  #c02{
+    font-size: 25px;
+    margin: 19px;
+  }
+  .offer{
+    font-size: 17px;
+    display: flex;
+    padding: 8px;
+    
+  }
+  #offer01{
+    border-style: outset;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  .brand{
+    margin-top: 5px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+    border-color: #c84e02;
+    font-size: 18px;
+    border-width: 2px;
+    font-weight: 900;
+    border-style: solid;
+  }
+  .subsectionc02 button{
+    padding: 10px;
+    background-color: #ffd335;
+    display: block;
+    width: 180px;
+    margin-top: 10px;
+    border-radius: 80px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+
+  }
+  #blockimg{
+    border-radius: 10000px;
+    background-color: #18aeff;
+    border-style: solid;
+    border-width: 1px;
+  }
+ .about_product{
+  font-size: 19px;
+  margin-left: 20px;
+
+ }
+ #about{
+  font-weight: 600;
+  margin-bottom: 10px;
+ }
+
+ .report_box{
+  display: flex;
+  justify-content: space-around;
+  border-style: solid;
+  border-width: 0.8px;
+  border-radius: 15px;
+  border-color: #18aeff;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-bottom: 50px;
+ }
+ #samsung{
+  font-size: 25px;
+  color: #040278;
+  font-weight: 900;
+ }
+ #samsung_detail{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 800;
+  font-size: small;
+  text-shadow: #c84e02;
+  text-wrap: 50px;
+ }
+ .related_product{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  
+
+ }
+ .tagline{
+  margin-top: 50px;
+ }
+ #tagline{
+  margin-left: 90px;
+  font-size: 20px;
+  font-weight: 700;
+ }
+ .related_block{
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 12px;
+  text-align: center;
+
+}
+.size{
+    justify-content: space-around;
+    display: flex;
+    margin:20px;
+}
+#size{
+    padding: 10px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #cccccc;
+    width: 80px;
+    height: 23px;
+}
+#size:hover{
+    background-color: rgb(5, 1, 90);
+    color: white;
+    
+}
+#related_detail{
+  color: #0009ae;
+
+}
+#related_detail a:hover{
+  cursor: pointer;
+  background-color: #cccccc;
+
+}
+#last_msg{
+  margin: 30px;
+  font-style: italic;
+  font-weight: 600;
+  color: #c84e02;
+}
+#buynow:hover{
+    cursor: pointer;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="navlogo">
+          <div class="logoboder">
+            <h4>IPL.in</h4>
+          </div>
+        </div>
+        <div class="navadd border">
+          <p class="addfirst icon" >Deliver to</p>
+          <div class="addicon">
+            <i class="fa-solid fa-location-dot icon"></i>
+            <p class="addsecond icon">India</p>
+          </div>
+        </div>
+        
+        <div class="nav-search">
+            <select class="search-option1">
+                <option value="All" class="search-option2">All</option>
+            </select>
+            <input type="text" placeholder="Search here" class="search-input">
+            <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          
+           </div>
+           <div class="languageoption border">
+            <div class="american"></div>
+            <select class="lanoption">
+                <option value="lan">EN</option>
+            </select>
+           </div>
+           <div class="sign border">
+            <p class="login_here">
+                <a href="logic html.html">login here</a>
+            </p>
+            <div class="account">
+              <select class="account-sign">
+                <option value="Account">Account & Lists</option>
+              </select>
+            </div>
+            <div>
+            </div>
+           </div>
+           <div class="box6 border">
+            <p class="return">
+              Returns
+            </p>
+            <p class="order">
+              & Orders
+            </p>
+           </div>
+           <div class="cart border">
+            <i class="fa-solid fa-cart-shopping"></i>
+            cart
+           </div>
+      </div>
+      <hr>
+        
+      </div>
+      <hr>
+      <div class="hello">
+        <div> <p id="hello">Motivation from samsung, innovation from google</p></div>
+       <div class="offer_10">
+        <div><h4 id="offer_10">10% offer</h4></div>
+        <div><h3 id="limited_time">Limited time and date</h3></div>
+          
+          
+        </div>
+        
+       
+      </div>
+      <hr>
+    </header>
+
+    <main>
+      <div class="allsection">
+       <div class="sectionA">
+        <div class="subsection">
+            
+        </div>
+        
+       </div>
+       <div class="sectionB">
+        <div class="subsectionB">
+          <a href="https://imgbb.com/"><img src="https://i.ibb.co/CsqdMdN/Screenshot-2024-05-21-205645.png" alt="Screenshot-2024-05-21-205645" border="0"></a>
+          
+        </div>
+       </div>
+      
+    </div>
+    <div class="sectionC">
+      <div class="subsectionC01">
+        <p id="C01">KNK Cricket IPL Jersey RCB T Shirt VIRAT 18 IPL Team Merchandise Size Kids to Adult</p>
+        <hr>
+        <P id="c02">₹900</P>
+        <hr>
+        <div class="size"> 
+            <div id="size"><p>M</p></div>
+            <hr>
+            <div id="size"><p>L</p></div>
+            <hr>
+            <div id="size"><p>S</p></div>
+            <hr>
+            <div id="size"><p>XL</p></div>
+        </div>
+        <hr>
+          <hr>
+          <div class="blockimg">
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/d40P3Nw/878.jpg" alt="878" border="0"></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/WPyLgnv/kids-zone-popular-willow-cricket-bat-with-wicket-set-5-tennis-original-imaggtqsgkrcyzgw.webp" alt="878" height="300px" width="400px" border="0"></a>
+            <a href="https://imgbb.com/"><img src="https://i.ibb.co/LZKXSb4/768.jpg" alt="768" border="0"></a>
+          </div>
+          <br>
+          <hr>
+          <div class="offer">
+            
+            <div id="offer01"><p>Upto ₹629.80 discount on SBI Credit Cards</p></div>
+            <hr>
+            <div id="offer01"><p>No Cost EMI
+              Upto ₹283.57 EMI interest savings on Amazon Pay ICICI Bank Credit CardsUpto ₹283.57 EMI interest savings on Amazon Pay ICICI</p></div>
+              <hr>
+            <div id="offer01"><p>Partner Offers
+              Get GST invoice and save up to 28% on business purchases. Sign up for freeGet GST invoice and save up to 28% on business purchases.</p></div>
+            
+          </div>
+          
+
+        <hr>
+        
+         
+          <div class="about_product">
+            <ul id="about">About this product</ul>
+            <li>✅Bank OfferGet ₹50 instant discount on first Flipkart UPI transaction on order of ₹200 and aboveT&C.</li>
+            <li>✅Bank Offer5% Cashback on Flipkart Axis Bank CardT&C.</li>
+            <li>✅v.</li>
+            <li>✅QUALITY COMPONENTS: Extra heavy duty 3kva ISI marked element to provide resistance against scale formation.</li>
+          </div>
+          <li>✅Buy for 2000 get ₹500 off your Next BuyT&C.</li>
+          
+        
+      </div>
+      
+      <div class="subsectionc02">
+        <p>
+          <ul>₹900.00
+          <li>FREE delivery Thursday, 28 March.</li> 
+          <li>Details
+          Or fastest delivery Wednesday, 27 March. Details</li>
+          <li>Delivering to Morādābād 244001 - Update location</li>
+          </ul>
+          </p>
+          <button onclick="window.location.href='billform.html'">Buy Now</button>
+          <button type="button" id="buynow">Add To Cart</button>
+
+      </div>
+      <hr>
+    </div>
+    <div class="report_box">
+      
+      <div><a href="https://imgbb.com/"><img src="https://i.ibb.co/y4CqTJw/678678.jpg" alt="678678" border="0"></a></div>
+      <div id="samsung_detail">MRF Bat</div>
+      
+    </div>
+    <hr>
+    <div class="tagline"><p id="tagline">Related products with delivery!</p></div>
+    <div class="related_product">
+      <div class="related_block">
+        <div> <a href="https://imgbb.com/"><img src="https://i.ibb.co/d40P3Nw/878.jpg" alt="878" border="0"></a></div>
+        <div><a href="index_page.html" id="related_detail">details</a></div>
+      </div>
+      <div class="related_block">
+        <div><a href="https://imgbb.com/"><img src="https://i.ibb.co/WPyLgnv/kids-zone-popular-willow-cricket-bat-with-wicket-set-5-tennis-original-imaggtqsgkrcyzgw.webp" height="350px" width="400px" border="0"></a></div>
+        <div><a href="index_page.html" id="related_detail">details</a></div>
+      </div>
+      
+      
+      <div class="related_block">
+        <div><img src="https://i.ibb.co/RHKZWd9/images.jpg" alt="" height="200px" width="270px"></div>
+        <div><a href="index_page.html" id="related_detail">details</a></div>
+      </div>
+
+    </div>
+    <br>
+    <hr>
+    <p id="last_msg">After viewing product detail pages, look here to find an easy way to navigate back to pages you are interested in</p>
+   
+    <hr>
+    </main>
+    <footer>
+      <div class="firstpanel">
+        Back to top
+      </div>
+      <div class="secondpanel">
+        <ul>
+         <p>Get to Know Us</p>
+         <a href="blog.html">Blog</a>
+         <a href="about.html">About Us</a>
+        </ul>
+        <ul>
+          <p>connect With Us</p>
+          <a href="https://www.facebook.com/">Facebook</a>
+          <a href="https://twitter.com/i/flow/login">Twitter</a>
+          <a href="https://instagram.com/">instagram</a>
+          <a href="customer.html">Customer service</a>
+         </ul>
+         <ul>
+         <p>Amazon Payment Products</p>
+         <a href="https://paytm.com/blog/money-transfer/transfer-money-from-paytm-wallet-to-bank-account/">Wallet Pay</a>
+         <a href="https://paytm.com/login">Paytm</a>
+         <a href="https://www.phonepe.com/">PhonePay</a>
+         <a href="https://pay.google.com/about/">Google Pay</a>
+         <a href="https://bharatpe.com/">Bharat Pay</a>
+         <a href="https://www.investopedia.com/terms/c/cashondelivery.asp">Cash On delivery</a>
+        </ul>
+          <ul>
+          <p>Let Us Help You</p>
+          <a href="logic html.html">Your Account</a>
+          <a href="https://www.shiprocket.in/shipment-tracking/">Your Orders</a>
+          <a href="https://www.easyship.com/blog/shipping-with-poly-mailers">Shipping Rates & Policies</a>
+          <a href="https://termly.io/resources/templates/return-policy-template/#:~:text=A%20return%20policy%20indicates%20rules,or%20excluded%20from%20the%20policy.">Returns & Replacements</a>
+          <a href="customer.html">Help</a>
+         </ul>
+      </div>
+      <div class="thirdpanel">
+        <div class="logo"></div>
+        <div class="select-op">
+        <select name="" id="" class="sele">
+          <option value="En">English</option>
+          <option value="En">Hindi</option>
+          <option value="En">Urdu</option>
+          <option value="En">Spanish</option>
+          <option value="En">French</option>
+          <option value="En">Russian</option>
+          <option value="En">Geeek</option>
+          <option value="En">Chinese</option>
+        </select>
+        <select name="" id="" class="sele">
+          <option value="1">$ USD - U.S. Dollar</option>
+          <option value="1">$ Rupee</option>
+          <option value="1">$ Dinnar</option>
+          <option value="1">$ european dollar</option>
+          <option value="1">$ Umani Reaal</option>
+          <option value="1">$ Pound </option>
+          <option value="1">$ swiss Franc</option>
+          <option value="1">$ Newzeland Dollar</option>
+          <option value="1">$ Australian Dollar</option>
+          <option value="1">$ Dutch</option>
+          <option value="1">$ Canadian Dollar</option>
+          <option value="1">$ Singapore Dollar</option>
+          <option value="1">$ Jordanian Dinnar</option>
+
+        </select>w
+        
+        <select name="" id="" class="sele">
+          <option value="4"> United states</option>
+          <option value="4"> India</option>
+          <option value="4"> China</option>
+          <option value="4"> Pakistan</option>
+          <option value="4"> Bhutan</option>
+          <option value="4"> Sri Lanka</option>
+          <option value="4"> Afganistan</option>
+          <option value="4"> nepal</option>
+          <option value="4"> bangladesh</option>
+          <option value="4"> myanmar</option>
+          <option value="4"> italy</option>
+          <option value="4"> Australia</option>
+          <option value="4"> Indoneshia</option>
+          <option value="4"> Germany</option>
+          <option value="4"> Newzyland</option>
+          <option value="4"> Southie</option>
+
+        </select>
+        </div>
+      </div>
+      <div class="panel4">
+        <div class="page">
+          <a href="">Conditions of Use</a>
+            <a href="">Privacy Notice</a>
+            <a href="">Your Ads Privacy Choices</a>
+        </div>
+        <div class="copyright">
+          © 1996-2024, Amazon.com, Inc. or its affiliates
+        </div>
+      </div>
+
+    </footer>
+    
+        
+  </body>
+</html>
